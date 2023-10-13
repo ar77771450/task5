@@ -1,7 +1,11 @@
-// Function to start the game
-function startGame() {
-    // Implement logic to start the game
-    // Initialize speech recognition and capture the user's speech
-    // Compare the speech with the card text and provide feedback
-    console.log("Game started!");
-}
+document.getElementById("matchButton").addEventListener("click", () => {
+    const carName = document.getElementById("carName").value;
+    const speed = document.getElementById("speed").value;
+
+    // You can make an AJAX request to the backend to send the carName and speed for processing.
+    // Display the result in the #result div.
+    // For simplicity, we'll just display a message here.
+
+    const resultDiv = document.getElementById("result");
+    resultDiv.textContent = `Matching ${carName} with a speed of ${speed}...`;
+});

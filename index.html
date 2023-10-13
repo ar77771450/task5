@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speech Card Matching Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Car and Speed Matching</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div id="cardContainer">
-        <!-- Cards will be displayed here -->
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <!-- Add more cards as needed -->
+    <h1>Car and Speed Matching</h1>
+    <div>
+        <label for="carName">Enter Car Name:</label>
+        <input type="text" id="carName">
     </div>
-
-    <button id="startButton" onclick="startGame()">Start Game</button>
-
+    <div>
+        <label for="speed">Enter Speed:</label>
+        <input type="number" id="speed">
+    </div>
+    <button id="matchButton">Match</button>
+    <div id="result"></div>
     <script src="script.js"></script>
 </body>
 </html>
